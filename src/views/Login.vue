@@ -80,7 +80,7 @@ export default {
     submitForm (formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          alert('submit!')
+          this.$router.push('/main')
         } else {
           console.log('error submit!!')
           return false
